@@ -19,7 +19,7 @@
     color: #333;
 }
 html{
-    font-size: 62.5ù;
+    font-size: 13px;
     overflow: hidden;
 }
 html::-webkit-scrollbar-track{
@@ -37,15 +37,15 @@ body{
 section{
     background: #111;
     overflow-x: hidden;
-    padding-left: 35rem;
+    padding-left: 1rem;
 }
 .btn{
-    padding: 7rem 3rem;
+    padding: 2rem 3rem;
     background: #333;
-    color:#fff ;
+    color: #fff;
     cursor: pointer;
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 5rem;
 }
 .btn i{
@@ -140,9 +140,10 @@ header .navbar ul li a:hover{
    color: #fff;
 }
 .home h1{
-    font-size: 5rem;
+    font-size: 3rem;
     color: #fff;
  }
+
  .home h1 span{
     
     color:var(--yellow);
@@ -192,6 +193,7 @@ header .navbar ul li a:hover{
 .about.row.counter.box span{
     font-size: 4rem;
     color: var(--yellow);
+    
 }
 
 .education.box-container{
