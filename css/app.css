@@ -20,14 +20,13 @@
 }
 html{
     font-size: 13px;
-    overflow: hidden;
 }
 html::-webkit-scrollbar-track{
    width: 1.4rem;
 }
 html::-webkit-scrollbar-thumb{
     background:var(--yellow);
- }
+}
 body{
     overflow-x: hidden;
     background:#111;
@@ -37,8 +36,10 @@ body{
 section{
     background: #111;
     overflow-x: hidden;
-    padding-left: 1rem;
+    padding: 7rem 7rem;
+    padding-bottom: 0;
 }
+
 .btn{
     padding: 2rem 3rem;
     background: #333;
@@ -133,7 +134,7 @@ header .navbar ul li a:hover{
     display: flex;
     justify-content: center;
     flex-flow: column;
-    padding: 0 15rem;
+    padding: 7rem 7rem;
 }
 .home h3{
    font-size: 2.5rem;
@@ -153,82 +154,87 @@ header .navbar ul li a:hover{
     color: #eee;
     padding: 1rem 0;
  }
-.about.row{
+
+.about {
+}
+
+.about .row{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 1rem 0;
+    padding: 3rem 0;
+    color: #fff
 }
-.about.row.info{
+.about .row .info{
     flex: 1 1 48rem;
     padding: 2rem 1rem;
     padding-left: 6rem;
 }
-.about.row.info h3{
+.about .row  .info h3{
     font-size: 2rem; 
     color: var(--yellow);
     padding: 1rem 0;
     font-weight: normal;
 }
-.about.row.info h3 span{
-     
+.about .row  .info h3 span{
     color: #eee;
     padding: 0 .5rem;
     font-weight: normal;
 }
-.about.row.counter{
+.about .row .counter{
     flex: 1 1 48rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;  
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
 }
-.about.row.counter.box{
-    width: 20rem;
-    background:#222 ;
-    text-align: center;
+.about .row .counter .box{
     padding: 2rem;
-    margin: 2rem;
+    background:#222;
+    text-align: center;
 }
-.about.row.counter.box span{
+.about .row .counter .box span{
     font-size: 4rem;
     color: var(--yellow);
-    
 }
 
-.education.box-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-    padding-left: 3rem;
+.about .row .counter .box h3{
+    margin: 2rem 0 1rem 0;
 }
-.education.box-container .box{
-    width: 27rem;
-    margin: 4rem 1rem;
+
+.education .box-container{
+    display: grid;
+    margin-top: 6rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem
+}
+.education .box-container .box{
     padding-left: 4rem;
     border-left: .2rem solid #fff;
     position: relative;
+    padding-bottom: 5rem;
 }
-.education.box-container .box span{
+
+.education .box-container .box span{
    font-size: 1.3rem;
    background: #222;
    color: #fff;
    border-radius: 5rem;
-   padding: 5rem 2.5rem;
+   padding: 1rem 2.5rem;
 }
-.education.box-container .box h3{
+.education .box-container .box h3{
     font-size: 2rem;
     color:#fff;
+    margin-top: 2rem;
     padding-top: 1.5rem;
 }
-.education.box-container .box p{
+.education .box-container .box p{
     font-size: 1.4rem;
     color:#eee;
     padding: 1rem 0;
 }
-.education.box-container .box i{
+.education .box-container .box i{
    position: absolute;
    top:-1.5rem; left:-2.5rem;
    height: 5rem;
@@ -294,9 +300,15 @@ header .navbar ul li a:hover{
 }
 .top{
     position: fixed;
-     bottom: 7.5rem; right: 2rem;
+     bottom: 4rem; right: 4rem;
+     background: red;
      z-index: 100;
-     display: none;
+     width: 5rem;
+}
+
+.top img {
+    width: 100%;
+    display: block;
 }
 
 
@@ -330,10 +342,10 @@ header .navbar ul li a:hover{
     .heading{
         margin: 0 3rem;
     }
-    .about.row.counter.box{
+    .about .row .counter .box{
         width: 100%;
     }
-    .education.box-container .box{
+    .education .box-container .box{
         width: 100%;
     }
     .contact .row form {
