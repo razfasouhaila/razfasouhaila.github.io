@@ -1,0 +1,390 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background-color: #072038;
+    overflow-x: hidden;
+}
+
+  
+ .bg-img{
+    
+    background-image: url(../assets/img/background-pattern.png);
+    position: fixed;
+    
+    inset: 0;
+    z-index: -2;
+    opacity: 0.08;
+    display:block;
+    
+ }
+@font-face {
+    font-family: "souha";
+    src: url("../assets/fonts/souha.ttf") format("truetype");
+   }
+
+
+.dropdown-menu{
+    display: none;
+    width: 100%;
+    
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    padding: 10px 30px;
+    /* position: relative; */
+}
+nav ul li:hover .dropdown-menu {
+    display: block;
+    position:absolute;
+    left:0;
+    top: 18%;
+    
+  }
+.dropdown-menu h1{
+    text-align: left;
+    padding: 10px 60px;
+    margin: 15px ;
+    text-decoration: solid;   
+}
+h2{
+    font-family:'souha';
+}
+.body h1{
+    font-weight: 600;
+    font-family:'souha';
+}
+
+#Free-demo{
+    background-color: #26C1D9;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    padding: 15px 10px;
+    font-family: 'souha';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    overflow: hidden;
+    position: relative;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    display: inline-block;   
+}
+#i-Free-demo{
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform:translateY(-10px);
+}
+
+#Free-demo:hover i{
+    right:5px; 
+    font-size: 20px;
+    transition: .3s ease-in-out;
+}
+
+#Free-demo:hover{
+    width: 130px !important;
+    text-align: left;
+    transition: .4s ease-in-out !important;
+}
+#F-d{
+    background-color: #26C1D9;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    padding: 15px 10px;
+    font-family: 'souha';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    overflow: hidden;
+    position: relative;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    display: inline-block;   
+}
+#i #F-d{
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform:translateY(-10px);
+}
+
+#F-d:hover i{
+    right:5px; 
+    font-size: 20px;
+    transition: .3s ease-in-out;
+}
+
+#F-d:hover{
+    width: 100% ;
+    text-align: left;
+    transition: .4s ease-in-out !important;
+}
+#TALK{
+    background-color: #FD7762;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    padding: 15px 10px;
+    font-family: 'souha';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    overflow: hidden;
+    position: relative;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #FD7762;
+   
+
+    
+}
+#i-TALK{
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform:translateY(-10px);
+}
+
+#TALK:hover i{
+    right:5px; 
+    font-size: 20px;
+    transition: .3s ease-in-out;
+}
+
+#TALK:hover{
+    width: 150px !important;
+    text-align: left;
+    transition: .4s ease-in-out !important;
+}
+.body table #img{
+    
+   
+    display: flex;
+    gap: 40px;
+}
+
+.txt-outline{
+    display: flex;
+    -webkit-text-stroke:3px #26C1D9 ;
+    color: transparent;
+    font-size: 177px;
+    position: relative;
+    left: 0;
+    right: 0%;
+    margin-top: 40px;
+    font-family: "souha";
+    transform: translate(-20px) rotate(-2.7deg);
+    
+}
+.txt-outline span{
+    color: #26C1D9;
+}
+.Triangle{
+    
+   
+    background-color: white;
+    position: relative;
+    
+    width: 100%; 
+    height: 850px;
+    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 100%);
+    
+}
+.Triangle h1 {
+    color: #072038;
+    font-family: "souha";
+    /* font-size: 55px; */
+    font-weight: 650;
+    /* width: 700%; */
+    line-height: 60px;
+    
+}
+.Triangle p{
+    color: #072038;
+    font-family: "souha";
+    position: absolute;
+    left: 726px;
+    font-weight: 600px;
+    font-size: 17px ;
+    width: 919px;
+    line-height: 19px;
+
+}
+.Tri-Txt{
+    display: flex;
+    /* position:absolute; */
+    /* top: 150px; */
+    gap: 500px;
+    /* margin: 12px 14; */
+    padding: 10% 0px;
+    padding-left: 9%;
+    justify-content: space-between;
+    
+}
+.shape{
+    position: absolute;
+    display: flex;
+    transform: translate(-20px) rotate(-90deg);
+    width: 500px;
+}
+
+.img-blue{
+    transform: rotate(180deg);
+    margin-top: -10px;
+}
+.p-img{
+    font-size: 20px !important;
+   
+}
+.bt{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 16px;
+gap: 8px;
+position: relative;
+right: 581px;
+top: 350px;
+}
+.im-computer{
+    display: flex;
+    position: relative;
+    left: 206px;
+    top: -200px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.s2{
+    position: absolute;
+}
+.s3{
+    position: relative;
+}
+.challenges{
+    display: flex;
+    position: relative;
+    left: 258px;
+    top: 300px;
+    font-weight: 500px;
+    /* font-size: 500px; */
+    font-family: "souha";
+    align-items: center;
+    text-align: center;
+}
+.chall{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left:97px;;
+    top: 400px;
+    width: 1328px;
+    height: 1036px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.chall #Li{
+    transform:translate(-4px, -1px) rotate(-35deg);
+    position: absolute;
+    zoom: 10;
+    overflow: hidden;
+}
+.chall #Por{
+    display: flex;
+    position: absolute;
+    /* margin-left: auto; */
+    left: -300px;
+    width: 8000px;
+    top: 100px;
+  
+}
+
+
+.DATA {
+    /* display: flex; */
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    margin-right: auto;
+    left: 900px;
+    top: -550px;
+}
+.data1 h1{
+    color: #072038;
+    font-family: "souha";
+    font-weight: 800;
+    margin-top: 25px;
+}
+.data1 p{
+    color: #072038;
+    font-family: "souha";
+    margin-top: 9px;
+    font-weight: 600;
+    text-align: justify;  
+}
+.data1 #TA{
+    color: #072038;
+    font-family: "souha";
+    margin-top: 19px;
+    font-weight: 600;
+    text-align: justify;  
+}
+/* .data1:hover{
+     background-color: #F0FDFF;
+} */
+#TA{
+    background-color: #FD7762;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    padding: 15px 10px;
+    font-family: 'souha';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    overflow: hidden;
+    position: relative;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    display: inline-block; 
+    margin-top: 29px;
+      
+}
+#i-TA{
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform:translateY(-10px);
+}
+
+#TA:hover i{
+    right:5px; 
+    font-size: 20px;
+    transition: .3s ease-in-out;
+}
+
+#TA:hover{
+    width: 300px !important;
+    text-align: left;
+    transition: .4s ease-in-out !important;
+}
+
