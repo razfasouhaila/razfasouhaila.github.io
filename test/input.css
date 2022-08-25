@@ -22,7 +22,7 @@ body{
  }
 @font-face {
     font-family: "souha";
-    src: url("../assets/fonts/souha.ttf") format("truetype");
+    src: url("./../assets/fonts/souha.ttf") format("truetype");
    }
 
 
