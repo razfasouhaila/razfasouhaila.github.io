@@ -11,7 +11,7 @@ body{
   
  .bg-img{
     
-    background-image: url(../assets/img/background-pattern.png);
+    background-image: url(./../assets/img/background-pattern.png);
     position: fixed;
     
     inset: 0;
